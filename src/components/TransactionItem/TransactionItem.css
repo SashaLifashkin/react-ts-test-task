@@ -1,0 +1,52 @@
+.transaction {
+    display: flex;
+    padding: 0.8em 0 0.8em 0;
+    margin-left: 0.8em;
+
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.transaction-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 3em;
+}
+
+.transaction-info {
+    width: calc(90% - 3em);
+    padding-left: 0.8em;
+}
+
+
+.transaction-info * {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.transaction-type {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.2em;
+}
+
+.description span:last-child,
+.date span:last-child {
+    color: rgb(128, 128, 128);
+}
+
+.button-to-detail {
+    width: 10%;
+    height: 20%;
+
+    font-size: 1.2em;
+    border: none;
+    background-color: white;
+}
+
+.fa-angle-right {
+    color: rgb(128, 128, 128);
+}

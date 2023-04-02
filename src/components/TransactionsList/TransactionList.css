@@ -1,0 +1,96 @@
+.transaction-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    max-width: 30em;
+    min-width: 10em;
+
+    background-color: var(--main-background-color);
+}
+
+
+.actual-info {
+    display: flex;
+    width: calc(100% - 2.4em);
+    max-width: 30em;
+    margin: 1.2em;
+}
+
+.card-points-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 50%;
+}
+
+.card-balance, .daily-points, .payment {
+    padding: 0.8em;
+    background-color: white;
+    border-radius: 0.8em;
+}
+
+.actual-info div p:last-child {
+    color: rgb(128, 128, 128);
+}
+
+.card-balance {
+    width: 100%;
+}
+
+.daily-points {
+    width: 100%;
+    margin-top: 0.8em;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 0.8em;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    background-color: var(--main-background-color);
+}
+
+.icon-span {
+    font-size: 2.5em;
+}
+
+.some-sum {
+    font-size: 3em;
+}
+
+.latest-transaciont-list {
+    margin: 1.2em 1.2em 0.8em 1.2em;
+}
+
+.transcation-unordered-list {
+    width: calc(100% - 2.4em);
+    height: calc(var(--li-height) * var(--li-count));
+    margin: 0 1.2em 1.2em 1.2em;
+    border-radius: 0.8em;
+    background-color: white;
+    list-style: none;
+    overflow: hidden;
+}
+
+li {
+    height: var(--li-height);
+}
+
+li:last-child > * {
+    border-bottom: none;
+}

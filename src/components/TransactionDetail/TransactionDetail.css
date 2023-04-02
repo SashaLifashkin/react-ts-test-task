@@ -1,0 +1,71 @@
+.transaction-detail {
+    width: 30em;
+    max-width: 30em;
+    background-color: var(--main-background-color);
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 1.2em;
+}
+
+.sum-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 2.4em;
+}
+
+.sum-info :not(:first-child) {
+    color: rgb(128, 128, 128);
+}
+
+.about-sum {
+    font-size: 3em;
+}
+
+.status-total-info {
+    padding: 0.8em;
+    background-color: white;
+    border-radius: 0.8em;
+}
+
+.status {
+    align-self: flex-start;
+    width: 100%
+}
+
+.status :first-child {
+    font-size: 1em;
+}
+
+.status > :last-child {
+    color: rgb(128, 128, 128);
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hr-line {
+    margin: 1em 0;
+}
+
+.button-to-back {
+    /* width: 2.4em;
+    height: 1.2em; */
+
+    border: none;
+    background-color: transparent;
+    font-size: 1.2em;
+}
+
+.fa-angle-left {
+    color: blue;
+}

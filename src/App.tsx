@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import { TransactionList } from './components/TransactionsList'
+import dataFromServer from './data/TransactionData.json';
+import 'bulma/css/bulma.css';
+import './icon/css/all.css';
 import './App.css';
 
+const maxCreditLimit = 1500;
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <TransactionList
+                transactions={dataFromServer}
+                creditLimit={maxCreditLimit}
+            />
+        </div>
+    );
 }
 
 export default App;
